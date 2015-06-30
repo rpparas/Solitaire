@@ -1,0 +1,174 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Java Solitaire</title>
+<script language="JavaScript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'button1F.jpg',/*url*/'button20.jpg',/*url*/'button25.jpg',/*url*/'button26.jpg',/*url*/'button31.jpg',/*url*/'button32.jpg',/*url*/'button34.jpg',/*url*/'button35.jpg',/*url*/'button37.jpg',/*url*/'button38.jpg',/*url*/'images/buttonC.jpg',/*url*/'images/buttonB.jpg',/*url*/'images/button3.jpg',/*url*/'images/button2.jpg',/*url*/'images/buttonF.jpg',/*url*/'images/buttonE.jpg',/*url*/'button5.jpg',/*url*/'button4.jpg',/*url*/'button3.jpg',/*url*/'button2.jpg')">
+
+<table border="1" width="92%" id="table1" bordercolor="#0066FF" cellpadding="2" cellspacing="1">
+	<tr>
+		<th colspan="2">
+		<p align="center"><b><font face="Arial" size="4">
+		<a name="Java_Solitaire">Java Solitaire</a></font></b></th>
+	</tr>
+	<tr>
+		<td width="99" valign="top">
+		<table border="0" width="100%" id="table4">
+			<tr>
+				<th bordercolor="#0066FF">
+				<p align="center"><b><i><font face="Arial" size="2">Help...</font></i></b></th>
+			</tr>
+			<tr>
+				<td><a href="basics.html">
+				<img border="0" id="img2" src="images/buttonA.jpg" height="20" width="100" alt="Basics" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'images/buttonB.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'images/buttonA.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'images/buttonC.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'images/buttonB.jpg')" fp-style="fp-btn: Embossed Rectangle 1; fp-orig: 0" fp-title="Basics"></a></td>
+			</tr>
+			<tr>
+				<td height="24"><font face="Arial"><a href="interface.html">
+				<img border="0" id="img1" src="images/button1.jpg" height="20" width="100" alt="Interface" fp-style="fp-btn: Embossed Rectangle 1; fp-orig: 0" fp-title="Interface" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'images/button2.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'images/button1.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'images/button3.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'images/button2.jpg')"></a></font></td>
+			</tr>
+			<tr>
+				<td><a href="instructions.html">
+				<img border="0" id="img3" src="images/buttonD.jpg" height="20" width="100" alt="Instructions" onmouseover="FP_swapImg(1,0,/*id*/'img3',/*url*/'images/buttonE.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img3',/*url*/'images/buttonD.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img3',/*url*/'images/buttonF.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img3',/*url*/'images/buttonE.jpg')" fp-style="fp-btn: Embossed Rectangle 1; fp-orig: 0" fp-title="Instructions"></a></td>
+			</tr>
+			<tr>
+				<td><a href="concepts.html">
+				<img border="0" id="img16" src="button6.jpg" height="20" width="100" alt="123 Concepts" onmouseover="FP_swapImg(1,0,/*id*/'img16',/*url*/'button4.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img16',/*url*/'button6.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img16',/*url*/'button5.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img16',/*url*/'button4.jpg')" fp-style="fp-btn: Embossed Rectangle 1; fp-orig: 0" fp-title="123 Concepts"></a></td>
+			</tr>
+			<tr>
+				<td><a href="javascript:window.close();">
+				<img border="0" id="img4" src="button1.jpg" height="20" width="100" alt="Close Window" onmouseover="FP_swapImg(1,0,/*id*/'img4',/*url*/'button2.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img4',/*url*/'button1.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img4',/*url*/'button3.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img4',/*url*/'button2.jpg')" fp-style="fp-btn: Embossed Rectangle 1; fp-orig: 0" fp-title="Close Window"></a></td>
+			</tr>
+		</table>
+		</td>
+		<td valign="top">
+		<table border="0" width="100%" id="table3">
+			<tr>
+				<td>
+				<p align="center"><a href="#Overview">
+				<img border="0" id="img13" src="button30.jpg" height="33" width="100" alt="Overview" onmouseover="FP_swapImg(1,0,/*id*/'img13',/*url*/'button31.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img13',/*url*/'button30.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img13',/*url*/'button32.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img13',/*url*/'button31.jpg')" fp-style="fp-btn: Embossed Tab 1" fp-title="Overview"></a><a href="#Objective"><img border="0" id="img14" src="button33.jpg" height="33" width="100" alt="Objective" onmouseover="FP_swapImg(1,0,/*id*/'img14',/*url*/'button34.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img14',/*url*/'button33.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img14',/*url*/'button35.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img14',/*url*/'button34.jpg')" fp-style="fp-btn: Embossed Tab 1" fp-title="Objective"></a><a href="#Rules"><img border="0" id="img15" src="button36.jpg" height="33" width="100" alt="Rules" fp-style="fp-btn: Embossed Tab 1" fp-title="Rules" onmouseover="FP_swapImg(1,0,/*id*/'img15',/*url*/'button37.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img15',/*url*/'button36.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img15',/*url*/'button38.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img15',/*url*/'button37.jpg')"></a><a href="#Strategy"><img border="0" id="img10" src="button1E.jpg" height="33" width="100" alt="Strategy" onmouseover="FP_swapImg(1,0,/*id*/'img10',/*url*/'button1F.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img10',/*url*/'button1E.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img10',/*url*/'button20.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img10',/*url*/'button1F.jpg')" fp-style="fp-btn: Embossed Tab 1" fp-title="Strategy"></a><a href="#Winning"><img border="0" id="img12" src="button24.jpg" height="33" width="100" alt="Winning" fp-style="fp-btn: Embossed Tab 1" fp-title="Winning" onmouseover="FP_swapImg(1,0,/*id*/'img12',/*url*/'button25.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img12',/*url*/'button24.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img12',/*url*/'button26.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img12',/*url*/'button25.jpg')"></a></td>
+			</tr>
+			<tr>
+				<td>
+				<ul>
+					<li>
+					<p style="line-height: 150%" align="justify">
+					<font face="Arial"><i><b><a name="Overview">Overview</a></b></i><font size="2"> 
+					[<a href="#Java_Solitaire">top</a>]</font><br>
+					Solitaire is one of the oldest card games in the world. The 
+					traditional solitaire is played by a single player, whose 
+					aim is to complete the line-up of the four suits in 
+					ascending order from ace to king. The game play involves 
+					seven piles of cards – each initially stacked with cards in 
+					increasing order from 1 to 7, left to right. Only the 
+					topmost card in the pile is visible.</font></li>
+				</ul>
+				</td>
+			</tr>
+			<tr>
+				<td height="49">
+				<ul>
+					<li>
+					<p style="line-height: 150%" align="justify"><b><i>
+					<font face="Arial"><a name="Objective">Objective</a></font></i></b><font size="2" face="Arial"> 
+					[<a href="#Java_Solitaire">top</a>]</font><font face="Arial"><b><i><br>
+					</i></b>A player is allowed to draw three (3) cards from his deck 
+					(Stock) which are then placed in the Drawn Cards area.&nbsp; 
+					A player is also allowed to move cards across card holders 
+					or components in accordance with the Rules. At the end of 
+					the day, the player's aim is to send all the 
+					cards from the Pile and Stock to the Cabinet (Waste Pile).</font></li>
+				</ul>
+				</td>
+			</tr>
+			<tr>
+				<td height="98">
+				<ul>
+					<li>
+					<p style="line-height: 150%" align="justify">
+					<font face="Arial"><b><i><a name="Rules">Rules</a></i></b><font size="2"> 
+					[<a href="#Java_Solitaire">top</a>]</font><b><i><br>
+					</i></b>Any transfer of card to the Cabinet (from Pile or 
+					Drawn Cards) can only be done one at a time.&nbsp; 
+					Similarly, any transfer from the Drawn Cards is taken one at 
+					a time.&nbsp; On the other hand, moves within the Piles area 
+					can involve a single or multiple transfer of cards, provided 
+					that they are faced up.<br>
+					<br>
+					The basic rule is that the source card (if multiple, the 
+					topmost one), should have a rank which is one-lower than the 
+					destination card or Pile, and secondly, the source and 
+					destination must be of different colors.<br>
+					<br>
+					Example:&nbsp; 7 Hearts can be transferred to a Pile with lowest 
+					card of 8 Spade or 8 Club. Queen of Clubs can be received by King of 
+					Hearts or Diamonds.<br>
+					<br>
+					Consequently, only Kings can be transferred to a 
+					blank or empty Pile.</font></li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td height="49">
+				<ul>
+					<li>
+					<p style="line-height: 150%" align="justify">
+					<font face="Arial"><b><i><a name="Strategy">Strategy</a></i></b><font size="2"> 
+					[<a href="#Java_Solitaire">top</a>]</font><b><i><br>
+					</i></b>The main strategy of the game is to build a pile of 
+					cards of alternating colors and decreasing rank.&nbsp; This 
+					is done by transferring all cards from the Stock and 
+					flipping the face down cards in the Piles.</font></li>
+				</ul>
+				</td>
+			</tr>
+			<tr>
+				<td height="49">
+				<ul>
+					<li>
+					<p style="line-height: 150%" align="justify"><b><i>
+					<font face="Arial"><a name="Winning">Winning</a></font></i></b><font size="2" face="Arial"> 
+					[<a href="#Java_Solitaire">top</a>]</font><br>
+					<font face="Arial">How do you actually win?&nbsp; You have 
+					to clear the Piles of cards and empty the Stock to win the 
+					game.&nbsp; But to qualify for the Best Times, the game 
+					duration should fall amongst the five fastest players in 
+					record.&nbsp; To bid for Fast Moves, you should aim for the 
+					smallest number of moves in this game.</font></li>
+				</ul>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+
+</body>
+
+</html>
