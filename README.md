@@ -14,3 +14,4 @@ The Stock uses the LinkedList data structure to hold the shuffled cards (those l
 Cabinet
 The Cabinet class is instantiated four times to match the four card suits. It makes use of the Stack data structure as it accumulates one card at a time and only releases the topmost card in its stack.
 
+![Conceptual design](https://github.com/rpparas/Solitaire/blob/master/howTo/images/sol.png?raw=true)
